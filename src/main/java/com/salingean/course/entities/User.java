@@ -16,17 +16,17 @@ public class User implements Serializable {
     private String name;
     private String email;
     private String phone;
-    private String passowrd;
+    private String password;
 
     private User(){
     }
 
-    public User(Long id, String name, String email, String phone, String passowrd) {
+    public User(Long id, String name, String email, String phone, String password) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.phone = phone;
-        this.passowrd = passowrd;
+        this.password = password;
     }
 
     public Long getId() {
@@ -61,12 +61,12 @@ public class User implements Serializable {
         this.phone = phone;
     }
 
-    public String getPassowrd() {
-        return passowrd;
+    public String getpassword() {
+        return password;
     }
 
-    public void setPassowrd(String passowrd) {
-        this.passowrd = passowrd;
+    public void setpassword(String password) {
+        this.password = password;
     }
 
     @Override
